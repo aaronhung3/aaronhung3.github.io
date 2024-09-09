@@ -194,7 +194,7 @@ ul li a:hover {
 .icons {
     padding: 20px 30px;
     height: 32px;
-    width: 32px;;
+    width: 32px;
 }
 
 .context-2 {
@@ -275,16 +275,6 @@ ul li a:hover {
     margin: 50px 15em;
 }
 
-.contact-info {
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    top: 20px;
-    left: 5vw;
-    width: 50%;
-    height: 50%;
-}
-
 input {
     border: 0;
     outline: 0;
@@ -314,7 +304,7 @@ label {
     vertical-align: middle;
     position: relative;
     top: 15vh;
-    left: 8vw;
+    left: 5vw;
     width: 50%;
     height: 50%;
     font-weight: bold;
