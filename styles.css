@@ -6,8 +6,12 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .header {
-    height: 90px;
+    height: 10%;
     width: 100%;
     background-color: white;
     display: flex;
@@ -26,16 +30,22 @@ body {
 }
 
 .nav-bar {
+    width: 40%;
     display: flex;
-    margin: 0 25em;
+    margin: 0 10%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
 }
 
 ul li {
     text-decoration: none;
     list-style-type: none;
     margin: auto;
-    display: inline-flex;
-    padding: 0 50px;
+    padding: 0 5%;
     font-size: larger;
 }
 
@@ -133,7 +143,7 @@ ul li a:hover {
 
 .about-me {
     height: 55vh;
-    margin: 100px 500px 0;
+    margin: 5% 20% 0;
     display: flex;
     flex-direction: row;
 }
@@ -141,23 +151,23 @@ ul li a:hover {
 .image {
     width: 30%;
     float: left;
-    margin-right: 30px;
+    margin-right: 3em;
 }
 
 #character {
-    height: 500px;
-    width:300px;
+    height: 31.25em;
+    width: 18.75em;
 }
 
 .context {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 6.25em;
 }
 
 #info-text {
     line-height: 2;
     margin: 0;
-    width: 25vw;
+    width: 80%;
 }
 
 .typed-container {
@@ -192,13 +202,13 @@ ul li a:hover {
 }
 
 .icons {
-    padding: 20px 30px;
-    height: 32px;
-    width: 32px;
+    padding: 1.25em 1.875em;
+    height: 2em;
+    width: 2em;
 }
 
 .context-2 {
-    margin: 50px 15em;
+    margin: 15% 15em 0 ;
 }
 
 .context-2 h1, .context-2 h5 {
@@ -211,27 +221,30 @@ ul li a:hover {
 }
 
 .text-2 h5 {
-    padding-right: 25px;
-    margin-top: -5px;
+    padding-right: 1.5625em;
+    margin-top: -0.3125em;
     width: 100vh;
 }
 
 .projects {
-    margin: 50px 15em;
+    margin: 5% 0 0 15%;
 }
 
-.card {
-    width: 100%;
+.container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    gap: 5%;
+    margin-left: 3%;
 }
 
 .card-border {
-    width: 250px;
-    height: 350px;
+    width: 15.625em;
+    height: 21.875em;
     border-radius: 20px;
     border-style: solid;
     border-color: black;
     float: left;
-    margin: 0 109px 70px;
+    margin: 0 0 5%;
 }
 
 .card-icon {
@@ -272,7 +285,8 @@ ul li a:hover {
 }
 
 .contact {
-    margin: 50px 15em;
+    height: 75vh;
+    margin: 13% 0 0 15%;
 }
 
 input {
@@ -287,13 +301,15 @@ label {
     font-weight: bold;
 }
 .contact-container {
+    max-width: 100%;
+    width: 90vw;
     display: flex;
     height: 50vh;
 }
 
 .contact-info {
     width: 21.2vw;
-    padding: 30px;
+    padding: 10%;
     border: 1px solid black;
     border-radius: 15px;
     box-shadow: 12px 12px 2px 1px gray;
@@ -304,7 +320,6 @@ label {
     vertical-align: middle;
     position: relative;
     top: 15vh;
-    left: 5vw;
     width: 50%;
     height: 50%;
     font-weight: bold;
@@ -313,16 +328,24 @@ label {
 
 .contact-icons {
     margin-top: 3vh;
-    margin-left: 3vw;
+    margin-left: 3em;
     display: flex;
     justify-content: space-between;
     font-size: 50px;
     width: 15vw;
-    height: 50px;
+    height: 10%;
 }
 
 #github:hover, #linkedin:hover, #mail:hover {
     transform: scale(1.1);
     cursor: pointer;
     transition: all 200ms ease-in;
+}
+
+#about {
+    scroll-margin: 80vh;
+}
+
+#projects {
+    scroll-margin: 25vh;
 }
