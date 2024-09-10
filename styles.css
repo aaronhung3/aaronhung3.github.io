@@ -55,7 +55,6 @@ ul li a:active, ul li a:visited, ul li a:link {
 }
 
 ul li a:hover {
-    transform: scale(1.1);
     text-shadow: 2px 4px 4px rgb(165, 163, 163);
     transition: all 0.3s ease-in;
 }
@@ -208,7 +207,7 @@ ul li a:hover {
 }
 
 .context-2 {
-    margin: 15% 15em 0 ;
+    margin: 5% 15% 0 ;
 }
 
 .context-2 h1, .context-2 h5 {
@@ -233,8 +232,8 @@ ul li a:hover {
 .container {
     display: inline-grid;
     grid-template-columns: auto auto auto;
-    gap: 5%;
-    margin-left: 3%;
+    gap: 15%;
+    margin-left: 8vw;
 }
 
 .card-border {
@@ -286,7 +285,7 @@ ul li a:hover {
 
 .contact {
     height: 75vh;
-    margin: 13% 0 0 15%;
+    margin: 15% 0 0 15%;
 }
 
 input {
@@ -328,7 +327,7 @@ label {
 
 .contact-icons {
     margin-top: 3vh;
-    margin-left: 3em;
+    margin-left: 10%;
     display: flex;
     justify-content: space-between;
     font-size: 50px;
@@ -347,5 +346,5 @@ label {
 }
 
 #projects {
-    scroll-margin: 25vh;
+    scroll-margin: 23vh;
 }
