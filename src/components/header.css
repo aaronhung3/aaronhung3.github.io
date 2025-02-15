@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --innerVh: 8.36px;
+    --bckgrdcolor: #CADCFC;
+    --fontcolor: #00246B;
+    --textcolor: #606887;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 8.71vh;
+    z-index: 5;
+}
+
+.logo {
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 2.5em;
+    font-weight: 800;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 88px 0 96px;
+    font-size: larger;
+    color: var(--fontcolor);
+}
+
+.right-part ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.right-part ul li {
+    line-height: 0;
+}
+
+.right-part ul li {
+    margin-left: 50px;
+}
+
+.header-wrapper a {
+    text-decoration: none;
+    color: black;
+}
+
+.right-part {
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn {
+    background: none;
+    border: 2px solid var(--textcolor);
+    font-family: "Sour Gummy", serif;
+    padding: 12px 20px;
+    margin: 5px;
+    min-width: 120px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    font-size: medium;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.btn span {
+    background: none;
+    z-index: 1;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--fontcolor);
+    z-index: 0;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.btn1::before {
+    transform: scaleX(0);
+}
+
+.btn1:hover::before {
+    transform: scaleX(1);
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 40;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.material-symbols-outlined.size {
+    font-size: 2rem;
+    color: var(--textcolor);
+}
+
+#lightmode-symbol:hover, #darkmode-symbol:hover, .material-symbols-outlined.clicked {
+    transform: scale(1.2);
+    color: var(--fontcolor);
+}

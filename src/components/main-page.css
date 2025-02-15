@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Color codes for website */
+:root {
+    --innerVh: 8.36px;
+    --bckgrdcolor: #CADCFC;
+    --fontcolor: #00246B;
+    --textcolor: #606887;
+}
+
+.content-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.page-content {
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    height: inherit;
+    justify-content: space-around;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    height: calc(var(--innerVh, 1vh)* 100);
+    justify-content: center;
+    margin: 0 240px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-text {
+    position: relative;
+    text-align: center;
+    letter-spacing: .05rem;
+}
+
+.intro-id-container {
+    display: inline-block;
+    font-family: "Sour Gummy", serif;
+    text-transform: uppercase;
+}
+  
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    from { border-color: transparent }
+    to { border-color: black; }
+}
+  
+.intro-id {
+    overflow: hidden;
+    border-right: .15rem solid black;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 1.6s steps(35, end) forwards,
+                    blink 1.3s infinite;;
+    vertical-align: middle;
+}
+
+#intro {
+    color: #606887;
+    font-family: "Sour Gummy", serif;
+    font-size: 4rem;
+}
+
+#intro-name {
+    letter-spacing: normal;
+    font-size: 5rem;
+    color: var(--fontcolor);
+}
+
+.intro-text {
+    font-family: "Sour Gummy", serif;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: #606887;
+}
+
+.link-container {
+    margin-top: 24px;
+    font-family: "Sour Gummy", serif;
+    color: var(--textcolor);
+}
+
+.link-container ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.link-container ul li {
+    display: inline-flex;
+    margin-right: 24px;
+}
+
+.link-container a {
+    text-decoration: none;
+    color: var(--textcolor);
+}
+
+.nav-btn {
+    font-size: 1.5rem;
+}
+
+.nav-btn::before {
+    content: '>';
+    display: inline-block;
+    width: 20px;
+    vertical-align: middle;
+    transition: opacity 0.5s ease-out;
+    opacity: 0;
+}
+
+.nav-btn:hover::before {
+    opacity: 1;
+    color: var(--fontcolor);
+}
+
+.nav-btn:hover span {
+    color: var(--fontcolor);
+}
