@@ -4,7 +4,7 @@ import './header.css'
 function Header() {
 
     const onButtonClick = () => {
-        const pdfUrl = process.env.PUBLIC_URL ? process.env.PUBLIC_URL + "/aaronhung_resume.pdf" : "/aaronhung_resume.pdf";
+        const pdfUrl = "https://aaronhung3w.github.io/aaronhung_resume.pdf";
         const link = document.createElement("a");
         link.href = pdfUrl;
         link.download = "resume.pdf"; 

@@ -83,6 +83,7 @@
     height: 5vh;
     border: 2px solid black;
     background-color: white;
+    font-family: "Sour Gummy", serif;
 }
 
 .contact-form button:hover {
