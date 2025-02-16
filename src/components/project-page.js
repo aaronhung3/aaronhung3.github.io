@@ -1,8 +1,11 @@
+import Header from './header';
+import Home from './home-button';
+
 function Project() {
     return (
         <div>
-            <h1>Project Name</h1>
-            <p>Description</p>
+            <Header />
+            <Home />
         </div>
     )
 }

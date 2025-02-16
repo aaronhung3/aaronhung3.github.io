@@ -1,5 +1,8 @@
 import Header from './header';
+import Home from './home-button';
 import './contact-page.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function Contact() {
     return (
@@ -9,7 +12,10 @@ function Contact() {
                 <div className="contact-wrapper">
                     <div className="profile-container">
                         <div className="profile-pic">Profile Pic</div>
-                        <div className="social-links">Social Links</div>
+                        <div className="social-links">
+                            <FontAwesomeIcon icon={faGithub} />
+                            <FontAwesomeIcon icon={faLinkedin} />
+                        </div>
                     </div>
                     <div className="contact-form">
                         <form>
@@ -24,6 +30,8 @@ function Contact() {
                     </div>
                 </div>
             </div>
+            <Home />
+            <script src="https://kit.fontawesome.com/77dfe2fd47.js" crossorigin="anonymous"></script>
         </div>
     );
 }

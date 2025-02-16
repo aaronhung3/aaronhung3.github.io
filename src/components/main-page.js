@@ -25,7 +25,7 @@ function Main() {
                                         <Link to='/contact'>
                                             <li class="nav-btn" id="nav-btn-1"><span>Contact</span></li>
                                         </Link>
-                                        <Link to='projects'>
+                                        <Link to='/projects'>
                                             <li class="nav-btn" id="nav-btn-2"><span>Projects</span></li>
                                         </Link>
                                     </ul>
