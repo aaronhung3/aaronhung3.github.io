@@ -32,6 +32,11 @@
     text-align: center;;
 }
 
+#linkedin-title, #github-title {
+    width: 100%;
+}
+
+
 .contact-page-icons svg {
     width: 80px;
     height: 80px;
