@@ -1,53 +1,43 @@
 import React from 'react';
-import './header.css'
+import './header.css';
+
+import { Link } from 'react-router-dom';
 
 function Header() {
 
-    const onButtonClick = () => {
-        const pdfUrl = "https://aaronhung3.github.io/aaronhung_resume.pdf";
-        const link = document.createElement("a");
-        link.href = pdfUrl;
-        link.download = "resume.pdf"; 
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
-
     return (
-    <header class="header">
-        <div class="header-wrapper">
-            <div class="left-part">
-                <div class="logo">
-                    <span>AH</span>
+        <header className='header-container'>
+            <div className='header-content-left'></div>
+            <div className='header-content-middle'> 
+                <Link to='/'>
+                <div className='header-nav-items left' id='header-item-about'>
+                    <span>About</span>
                 </div>
+                </Link>
+                <Link to='/contact'>
+                <div className='header-nav-items left' id='header-item-contact'>
+                    <span>Contact</span>
+                </div>
+                </Link>
+                <div className='header-nav-items icon' id='header-item-theme'>
+                    <span className="material-symbols-outlined md-60">
+                        light_mode
+                    </span>
+                </div>
+                <Link to='/projects'>
+                <div className='header-nav-items right' id='header-item-projects'>
+                    <span>Projects</span>
+                </div>
+                </Link>
+                <Link to='/resume'>
+                <div className='header-nav-items right' id='header-content-resume'>
+                    <span>Resume</span>                 
+                </div>
+                </Link>
             </div>
-            <div class="right-part">
-                <ul>
-                    <li>
-                        <span class="material-symbols-outlined size" id="darkmode-symbol">
-                            dark_mode
-                        </span>
-                    </li>
-                    <li>
-                        <span class="material-symbols-outlined size" id="lightmode-symbol">
-                            light_mode
-                        </span>
-                    </li>
-                    <li id="nav-btn-3">
-                        <a href="/resume.html">
-                            <button class="btn btn1" onClick={onButtonClick}>
-                                <span class="material-symbols-outlined" id="donwload-symbol">
-                                    download
-                                </span>
-                                <span id="text">Resume</span>
-                            </button>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    )
+            <div className='header-content-right'></div>
+        </header>
+    );
 }
 
 export default Header;

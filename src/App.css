@@ -1,14 +1,23 @@
-/* Color codes for website */
-:root {
-    --innerVh: 8.36px;
-    --bckgrdcolor: #CADCFC;
-    --fontcolor: #00246B;
-    --textcolor: #606887;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--bckgrdcolor);
+    font-family: WF Visual Sans, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    height: 100%;
+    width: 100%;
+}
+
+/* Global color schemes for default webpage */
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --hover-color: #d2d4dc;
+    --picture-border-color: #000000;
+    --codebox-background-color: #424241;
+    --codebox-projectbox-color: #2e2d2b;
+    --codebox-border-color: #696969;
 }
