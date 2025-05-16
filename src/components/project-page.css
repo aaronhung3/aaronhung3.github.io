@@ -8,6 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .project-page-code-box {
@@ -36,17 +37,22 @@
     border-radius: 0px 0px 10px 10px; 
     display: flex;
     flex-direction: row;
+    height: 95%;
 }
 
 .code-box-left {
     width: 46%;
-    border-radius: 0px 0px 0px 10px; 
+    border-radius: 0px 0px 0px 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .code-box-right {
     background-color: var(--codebox-projectbox-color);
     flex: 1;
-    border-radius: 0px 0px 10px 0px; 
+    border-radius: 0px 0px 10px 0px;
+    height: 100%;
 }
 
 .code-box-right-content {
@@ -55,7 +61,7 @@
 
 .code-box-up {
     width: 100%;
-    height: 70%;
+    flex: 7;
 }
 
 .code-box-up span {
@@ -66,7 +72,7 @@
 
 .code-box-down {
     width: 100%;
-    height: 30%;
+    flex: 3;
     border-top: 1px solid var(--codebox-border-color);
 }
 
@@ -171,7 +177,8 @@ option[value=""][disabled] {
     line-height: 1.5rem;
 }
 
-#sushi-image {
+#sushi-image, #dungeon-image, #stroke-image, #electricity-image, #valorant-image {
     width: 100%;
+    height: 15rem;
     margin-bottom: 20px;
 }

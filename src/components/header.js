@@ -2,6 +2,7 @@ import React from 'react';
 import './header.css';
 
 import { Link } from 'react-router-dom';
+import { text } from '@fortawesome/fontawesome-svg-core';
 
 function Header() {
 
@@ -30,8 +31,8 @@ function Header() {
                 </div>
                 </Link>
                 <Link to='/resume'>
-                <div className='header-nav-items right' id='header-content-resume'>
-                    <span>Resume</span>                 
+                <div className='header-nav-items right' id='header-content-resume' style={{margin: 'auto'}}>
+                    <span>Resume</span>               
                 </div>
                 </Link>
             </div>

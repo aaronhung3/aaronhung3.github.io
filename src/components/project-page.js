@@ -35,7 +35,7 @@ function Project() {
                                     <span>&nbsp;&nbsp;"Sushi Restaurant API", </span>
                                     <span>&nbsp;&nbsp;"Dungeon Crawler", </span>
                                     <span>&nbsp;&nbsp;"Electricity Tracker",  </span>
-                                    <span>&nbsp;&nbsp;"Valentine's Day Gift Box", </span>
+                                    <span>&nbsp;&nbsp;"Stroke Predictor,"</span>
                                     <span>&nbsp;&nbsp;"Valorant Match Predictor"</span>
                                     <span>&nbsp;&nbsp;]</span>
                                     <span>&nbsp;&nbsp;user_input = input("Select the project you want to see: ")</span><br/>
@@ -53,7 +53,7 @@ function Project() {
                                             <option value="Sushi Restaurant API">Sushi Restaurant API</option>
                                             <option value="Dungeon Crawler">Dungeon Crawler</option>
                                             <option value="Electricity Tracker">Electricity Tracker</option>
-                                            <option value="Valentine's Day Gift Box">Valentine's Day Gift Box</option>
+                                            <option value="Stroke Predictor">Stroke Predictor</option>
                                             <option value="Valorant Match Predictor">Valorant Match Predictor</option>
                                         </select>
                                     </label>
@@ -72,7 +72,7 @@ function Project() {
                                         <div className="code-page-content">
                                             <span style={{fontStyle: 'italic', fontWeight: 'bold'}}>Tools: Python, FastAPI, YelpAPI, Postman</span>
                                             <span>
-                                                Created a FastAPI application that allows users to view all the Sushi Restaurants in a specified city inside the US. The application uses the YelpAPI to fetch restaurant data and displays it in a user-friendly format. Debugged and tested by utilizing Postman to ensure the API endpoints were functioning correctly. Uvicorn was used to run the FastAPI server.
+                                                Created a FastAPI application that allows users to view all the Sushi Restaurants in a specified city inside the US. The application uses the YelpAPI to fetch restaurant data and displays it in a JSON format. Debugged and tested by utilizing Postman to ensure the API endpoints were functioning correctly. Uvicorn was used to run the FastAPI server.
                                             </span>
                                         </div>
                                     </div>
@@ -84,7 +84,7 @@ function Project() {
                                         <span>Dungeon Crawler</span>
                                     </div>
                                     <div className='code-page-content-box'>
-                                        <div className='code-page-image'></div>
+                                        <div className='code-page-image'><img src="/images/dungeon.jpeg" alt='Dungeon Crawler' id="dungeon-image"/></div>
                                         <div className="code-page-content">
                                             <span style={{fontStyle: 'italic', fontWeight: 'bold'}}>Tools: Java, Android Studio, libgdx</span>
                                             <span>
@@ -100,7 +100,7 @@ function Project() {
                                         <span>Electricity Tracker</span>
                                     </div>
                                     <div className='code-page-content-box'>
-                                        <div className='code-page-image'></div>
+                                        <div className='code-page-image'><img src='/images/electricity.png' alt='Electricity Tracker' id="electricity-image"/></div>
                                         <div className="code-page-content">
                                             <span style={{fontStyle: 'italic', fontWeight: 'bold'}}>Tools: Python, SQL, React</span>
                                             <span>
@@ -110,18 +110,19 @@ function Project() {
                                     </div>
                                 </div>
                                 }
-                                {selectedValue === "Valentine's Day Gift Box" && 
+                                {selectedValue === 'Stroke Predictor' && 
                                 <div className="code-page-container" >
                                     <div className='code-page-header'>
-                                        <span>Valentine's Day Gift Box</span>
+                                        <span>Stroke Predictor</span>
                                     </div>
                                     <div className='code-page-content-box'>
-                                        <div className='code-page-image'></div>
+                                        <div className='code-page-image'><img src='/images/stroke.png' alt='Stroke Predictor' id="stroke-image"/></div>
                                         <div className="code-page-content">
-                                            <span style={{fontStyle: 'italic', fontWeight: 'bold'}}>Tools: React, HTML, CSS, Procreate</span>
+                                            <span style={{fontStyle: 'italic', fontWeight: 'bold'}}>Tools: Python, scikit-learn, Random Forest, SVM, XGBoost</span>
                                             <span>
-                                                Designed a Valentine's day web for my girlfriend using React. The web application features a grid box for each year of the surprise. Each button leads to the Valentine's day gift for that year. The web was created using React and designs were drawn using Procreate.
+                                                Worked with a team of 5 to create a stroke predictor using Python and scikit-learn. The predictor uses various machine learning algorithms, including random forest, SVM, and XGBoost, to predict the likelihood of a stroke based on user input. The predictor was trained using a dataset of over 5000 patients, with 12 different features. Achieved over 90% accuracy on the test set for the random forest and XGboost models.
                                             </span>
+                                            <span style={{marginTop: '10px', textDecoration: 'underline'}}><a href='https://github.gatech.edu/pages/ikim319/ML4641-Group8/' target="_blank" rel="noreferrer">Link to project documentation</a></span>
                                         </div>
                                     </div>
                                 </div>
@@ -132,12 +133,13 @@ function Project() {
                                         <span>Valorant Match Predictor</span>
                                     </div>
                                     <div className='code-page-content-box'>
-                                        <div className='code-page-image'></div>
+                                        <div className='code-page-image'><img src="/images/valorant.png" alt='Valorant Predictor' id="valorant-image"/></div>
                                         <div className="code-page-content">
                                             <span style={{fontStyle: 'italic', fontWeight: 'bold'}}>Tools: Python, pandas, scikit-learn, React</span>
                                             <span>
                                                 Currently working on a Valorant match predictor using Python, pandas, and scikit-learn. The predictor will pull past data from a cvs file and use it to predict the outcome of a match. The predictor will be trained using various machine learning algorithms, including linear regression and random forest. The goal of the project is to create a reliable and accurate predictor that can predict the winner of a tournament. The fronend will be built using React, allowing users to pair two teams together and see the predicted outcome of the match.
                                             </span>
+                                            <span style={{marginTop: '10px', textDecoration: 'underline'}}><a href='https://docs.google.com/document/d/1NYj2-fIQJmnMCQw1ii52-v3lYXf1EBKor8Nac7f-uSI/edit?usp=sharing' target="_blank" rel="noreferrer">Link to project documentation</a></span>
                                         </div>
                                     </div>
                                 </div>
